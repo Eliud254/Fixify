@@ -4,5 +4,6 @@
 
 body{
   font-family: "Nunito", "sans-serif";
-  @apply bg-emerald-600
+  background-color: #2DA68B;
+  
 }
