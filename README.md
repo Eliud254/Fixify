@@ -1,1 +1,1 @@
-Fixify
+Fixify App
