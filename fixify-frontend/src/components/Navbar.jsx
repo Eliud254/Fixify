@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { AiOutlineMenuFold } from "react-icons/ai";
 
+
 const NavLinks = [
   "Services",
   "About Us",
@@ -10,9 +11,14 @@ const NavLinks = [
 
 const Navbar = () => {
   const [nav, setNavbar] = useState(false);
+  const [showLogin, setShowLogin] = useState(false);
 
   const toggleNav = () => {
     setNavbar((prev) => !prev);
+  };
+
+  const toggleLogin = () => {
+    setShowLogin((prev) => !prev);
   };
 
   return (
@@ -31,8 +37,8 @@ const Navbar = () => {
                 {link}
               </a>
             ))}
-            <button className="px-5 rounded-md font-medium bg-white text-black border-indigo-600 py-2 hover:bg-indigo-700 hover:border-indigo-700">
-              Login
+            <button className="px-5 rounded-md font-medium bg-white text-black border-indigo-600 py-2 hover:bg-green-700 hover:border-green-700" onClick={toggleLogin}>
+            {showLogin ? 'SignUp' : 'Login'}
             </button>
           </div>
 
@@ -46,12 +52,12 @@ const Navbar = () => {
             <div className="absolute top-14 left-0 right-0 bg-emerald-600 text-white z-50 px-4 py-8 rounded-lg">
               <div className="space-y-6 flex flex-col items-center">
                 {NavLinks.map((link, index) => (
-                  <a key={index} className="hover:text-indigo-600 duration-300 ease-in-out cursor-pointer">
+                  <a key={index} className="hover:text-green-700 duration-300 ease-in-out cursor-pointer">
                     {link}
                   </a>
                 ))}
-                <button className="px-5 rounded-md font-medium bg-white text-black border-indigo-600 py-2 hover:bg-indigo-700 hover:border-indigo-700">
-                  Login
+                <button className="px-5 rounded-md font-medium bg-white text-black border-indigo-600 py-2 hover:bg-green-700 hover:border-indigo-700">
+                 {showLogin ? 'SignUp' : 'Login'}
                 </button>
               </div>
             </div>
