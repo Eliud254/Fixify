@@ -1,23 +1,23 @@
-import './App.css'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Services from './components/Services'
-import HowItWorks from './components/HowItWorks'
-import Reviews from './components/Reviews'
-import Footer from './components/Footer'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import './App.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Footer from './components/Footer';
+import LoginSignUp from './components/LoginSignUp';
 
 function App() {
-
   return (
-    <>
+   <>
       <Navbar />
-      <Hero />
-      <Services />
-      <HowItWorks />
-      <Reviews />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="login" element={<LoginSignUp />} />
+      </Routes>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
