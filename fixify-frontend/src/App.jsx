@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Footer from './components/Footer';
 import LoginSignUp from './components/LoginSignUp';
 
+
 function App() {
   return (
    <>
