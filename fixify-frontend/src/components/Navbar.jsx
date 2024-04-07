@@ -26,20 +26,20 @@ const Navbar = () => {
     <nav className="p-4 bg-emerald-600 text-white">
       <div className="container mx-auto max-w-screen-xl relative">
         {/* Flex container */}
-        <div className="flex justify-between items-center text-white">
+        <div className="flex justify-between items-center text-white text-2xl ">
           <a href="/">
             <span>Fixi</span>fy
           </a>
 
           {/* Menu */}
-          <div className="hidden lg:flex space-x-6 text-sm items-center">
+          <div className="hidden lg:flex space-x-6 text-sm items-center text-2xl">
             {NavLinks.map((link, index) => (
-              <a key={index} className="hover:text-indigo-600 duration-300 ease-in-out cursor-pointer">
+              <a key={index} className="hover:text-green-800 duration-300 ease-in-out cursor-pointer">
                 {link}
               </a>
             ))}
             <Link to="/login">
-              <button className="px-5 rounded-md font-medium bg-white text-black border-indigo-600 py-2 hover:bg-green-700 hover:border-green-700" onClick={toggleLogin}>
+              <button className="px-5 rounded-md font-medium bg-white text-black border-green-800 py-2 hover:bg-green-700 hover:border-green-700" onClick={toggleLogin}>
               {showLogin ? 'SignUp' : 'Login'}
               </button>
             </Link>
@@ -60,7 +60,7 @@ const Navbar = () => {
                   </a>
                 ))}
                 <Link to="/login">
-                  <button className="px-5 rounded-md font-medium bg-white text-black border-indigo-600 py-2 hover:bg-green-700 hover:border-indigo-700">
+                  <button className="px-5 rounded-md font-medium bg-white text-black border-green-800 py-2 hover:bg-green-700 hover:border-green-800">
                   {showLogin ? 'SignUp' : 'Login'}
                   </button>
                 </Link>
