@@ -1,0 +1,100 @@
+.fh-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 30px;
+    width: 600px;
+    
+}
+
+.fh-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+form {
+    flex: 1;
+}
+
+.fh-text {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.fh-underline {
+    width: 100px;
+    height: 6px;
+    background: #000;
+    border-radius: 9px;
+    margin-bottom: 50px;
+}
+
+.location-input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+    background: #eaeaea;
+    border-radius: 6px;
+}
+
+.service-input {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 480px;
+    height: 80px;
+}
+
+.service-input p {
+    margin: 0 10px;
+    font-size: 20px;
+}
+
+select {
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+}
+
+option {
+    font-size: 20px;
+}
+
+.icon {
+    margin: 0 30px;
+    font-size: 30px;
+    cursor: pointer;
+}
+form label input {
+    height: 50px;
+    width: 400px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.fh-submit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 60px auto;
+}
+
+.fh-submit {
+    width: 220px;
+    height: 59px;
+    background: #1f2937;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}

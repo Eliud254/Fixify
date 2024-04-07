@@ -1,6 +1,9 @@
 import React from 'react'
-import './LoginSignUp.css'
 import { useState } from 'react'
+
+
+import './LoginSignUp.css'
+
 
 import user_icon from '../assets/person.png'
 import email_icon from '../assets/email.png'

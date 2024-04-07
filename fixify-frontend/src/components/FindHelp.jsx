@@ -1,9 +1,18 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
+import { CiLocationOn } from "react-icons/ci";
+import './FindHelp.css'
+
+
 const FindHelp = () => {
   const [location, setLocation] = useState('');
+  const [serviceType, setServiceType] = useState('');
   const navigate = useNavigate();
+
+  const handleServiceTypeChange = (e) => {
+    setServiceType(e.target.value);
+  };
 
   const handleLocationChange = (e) => {
     setLocation(e.target.value);
@@ -18,14 +27,31 @@ const FindHelp = () => {
   };
 
   return (
-    <div className='m-20'>
-      <h1>Find Help</h1>
+    <div className='fh-container'>
+      <div className='fh-header'>
+      <h1 className='fh-text'>Find Help</h1>
+      <div className="fh-underline"></div>
+      </div>
+      
       <form onSubmit={handleSubmit}>
-        <label>
-          Location:
-          <input type="text" value={location} onChange={handleLocationChange} />
+        <label className='location-input'>
+          <CiLocationOn className='icon'/>
+          <input type="text" required placeholder='Please Input Your Location' value={location} onChange={handleLocationChange} />
         </label>
-        <button type="submit">Find Help</button>
+        <label className='service-input'>
+          <p>Service Type:</p>
+          <select value={serviceType} onChange={handleServiceTypeChange}>
+            <option>Select</option>
+            <option value="tow-truck">Tow Truck</option>
+            <option value="mechanic">Mechanic</option>
+            <option value="tyre-fix">Tyre Fix</option>
+            <option value="tyre-fix">Battery Jumpstart</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+        <div className="fh-submit-container">
+          <button className='fh-submit'>Locate Help</button>
+        </div>
       </form>
     </div>
   );
