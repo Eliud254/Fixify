@@ -32,14 +32,14 @@ const Navbar = () => {
           </a>
 
           {/* Menu */}
-          <div className="hidden lg:flex space-x-6 text-sm items-center text-2xl">
+          <div className="hidden lg:flex space-x-6 text-sm items-center ">
             {NavLinks.map((link, index) => (
-              <a key={index} className="hover:text-green-800 duration-300 ease-in-out cursor-pointer">
+              <a key={index} className="hover:text-green-800 duration-300 ease-in-out cursor-pointer text-2xl">
                 {link}
               </a>
             ))}
             <Link to="/login">
-              <button className="px-5 rounded-md font-medium bg-white text-black border-green-800 py-2 hover:bg-green-700 hover:border-green-700" onClick={toggleLogin}>
+              <button className="px-5 rounded-md font-medium bg-white text-black border-green-800 py-2 hover:bg-green-700 hover:border-green-700 text-2xl" onClick={toggleLogin}>
               {showLogin ? 'SignUp' : 'Login'}
               </button>
             </Link>
@@ -55,12 +55,12 @@ const Navbar = () => {
             <div className="absolute top-14 left-0 right-0 bg-emerald-600 text-white z-50 px-4 py-8 rounded-lg">
               <div className="space-y-6 flex flex-col items-center">
                 {NavLinks.map((link, index) => (
-                  <a key={index} className="hover:text-green-700 duration-300 ease-in-out cursor-pointer">
+                  <a key={index} className="hover:text-green-700 duration-300 ease-in-out cursor-pointer text-2xl">
                     {link}
                   </a>
                 ))}
                 <Link to="/login">
-                  <button className="px-5 rounded-md font-medium bg-white text-black border-green-800 py-2 hover:bg-green-700 hover:border-green-800">
+                  <button className="px-5 rounded-md font-medium bg-white text-black border-green-800 py-2 hover:bg-green-700 hover:border-green-800 text-2xl">
                   {showLogin ? 'SignUp' : 'Login'}
                   </button>
                 </Link>
