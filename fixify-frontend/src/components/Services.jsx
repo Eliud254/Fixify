@@ -2,6 +2,7 @@
 import React from 'react'
 import { GiTowTruck, GiCarWheel } from "react-icons/gi"
 import { FaCarBattery } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 
 const Services = () => {
@@ -22,7 +23,9 @@ const Services = () => {
           <p className='my-10 text-2xl'> Battery Jumpstart</p>
         </div>
       </div>
+      <Link to='/find-help'>
       <button className="bg-black text-white px-6 py-4 rounded-md hover:bg-green-700 text-xl font-semibold mt-20">Get Help Now</button>
+      </Link>
     </div>
   )
 }

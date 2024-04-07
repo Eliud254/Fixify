@@ -20,7 +20,7 @@ const HowItWorks = () => {
         </div>
         <div className="flex flex-col items-center bg-[#2DA68B] p-16 flex-1 rounded-md cursor-pointer hover:opacity-75">
           <CgTrack size={64} />
-          <p className='my-20 text-2xl'> Track Helpers Arrival</p>
+          <p className='mt-20 text-2xl'> Track Helpers Arrival</p>
         </div>
       </div>
     </div>
