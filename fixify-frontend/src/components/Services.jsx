@@ -7,22 +7,22 @@ import { FaCarBattery } from "react-icons/fa6";
 const Services = () => {
   return (
     <div className="text-center p-24">
-      <h1 className="text-3xl font-bold my-8">Services</h1>
-      <div className="flex justify-center space-x-4 my-8">
+      <h1 className="text-4xl font-bold my-8">Services</h1>
+      <div className="flex justify-center space-x-4 my-8 mt-20">
         <div className="flex flex-col items-center bg-white p-16 flex-1 rounded-md">
           <GiTowTruck size={64} />
-          <p className='my-10 text-xl'>Towing</p>
+          <p className='my-10 text-2xl'>Towing</p>
         </div>
         <div className="flex flex-col items-center bg-white p-16 flex-1 rounded-md">
           <GiCarWheel size={64} />
-          <p className='my-10 text-xl'>Tyre Change</p>
+          <p className='my-10 text-2xl'>Tyre Change</p>
         </div>
         <div className="flex flex-col items-center bg-white p-16 flex-1 rounded-md">
           <FaCarBattery size={64} />
-          <p className='my-10 text-xl'> Battery Jumpstart</p>
+          <p className='my-10 text-2xl'> Battery Jumpstart</p>
         </div>
       </div>
-      <button className="bg-black text-white px-6 py-4 rounded-md hover:bg-green-700">Get Help Now</button>
+      <button className="bg-black text-white px-6 py-4 rounded-md hover:bg-green-700 text-xl font-semibold mt-20">Get Help Now</button>
     </div>
   )
 }
