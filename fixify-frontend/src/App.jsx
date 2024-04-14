@@ -9,6 +9,8 @@ import Footer from './components/Footer';
 import LoginSignUp from './components/LoginSignUp';
 import FindHelp from './components/FindHelp';
 import Services from './components/Services';
+import Contacts from './components/Contact';
+import About from './components/About';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
         <Route path="/login" element={<LoginSignUp />} />
         <Route path="/find-help" element={<FindHelp />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/Contacts" element={<Contacts />} />
+        <Route path="/About" element={<About />} />
       </Routes>
       <Footer />
     </div>
