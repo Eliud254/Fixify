@@ -5,7 +5,7 @@ import placeholder from '../assets/place-holder-avatar.jpg'
 const Reviews = () => {
   return (
     <div className="text-center p-24">
-      <h1 className="text-4xl font-bold my-8">Reviews</h1>
+      <h1 className="text-4xl font-bold my-8 text-blue-900">Reviews</h1>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8 mt-20">
         <div className="flex flex-col items-center bg-white p-8 rounded-md">
           <img src={placeholder} alt="Avatar 1" className="w-24 h-24 rounded-full mb-4" />
@@ -28,7 +28,7 @@ const Reviews = () => {
           <p className="text-gray-500 mt-8 mb-8">Excellent service, highly recommended!</p>
         </div>
       </div>
-      <button className="bg-black text-white px-6 py-4 rounded-md hover:bg-green-700 text-xl font-semibold mt-20">Give Review</button>
+      <button className="bg-blue-900 text-white px-6 py-4 rounded-md hover:bg-blue-700 text-xl font-semibold mt-20">Give Review</button>
     </div>
   )
 }

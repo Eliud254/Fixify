@@ -82,7 +82,7 @@
     justify-content: center;
     width: 220px;
     height: 59px;
-    background: #059669;
+    background: #22229f;
     color: #fff;
     font-weight: 700;
     font-size: 20px;
@@ -91,7 +91,7 @@
 }
 
 .submit:hover {
-    background: #05895d;
+    background: #3b82f6;
 }
 
 .gray {
