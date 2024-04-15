@@ -22,7 +22,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="p-4 custom-bg-color text-white">
+    <nav className={`p-4 custom-bg-color text-white fixed top-0 left-0 right-0 z-50`}>
       <div className="container mx-auto max-w-screen-xl relative">
         {/* Flex container */}
         <div className="flex justify-between items-center custom-text-color text-2xl ">
