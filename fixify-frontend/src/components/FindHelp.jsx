@@ -59,8 +59,8 @@ const FindHelp = () => {
   return (
     <div className='fh-container padding-adjustment'>
       <div className='fh-header'>
-        <h1 className='fh-text'>Find Help</h1>
-        <div className="fh-underline"></div>
+        <h1 className='fh-text text-blue-900'>Find Help</h1>
+        <div className="underline mb-20"></div>
       </div>
       <form onSubmit={handleSubmit}>
         <label className='location-input'>
@@ -79,7 +79,7 @@ const FindHelp = () => {
           </select>
         </label>
         <div className="fh-submit-container">
-          <button type="button" className='fh-submit' onClick={handleLocateHelp}>Locate Help</button>
+          <button type="button" className='fh-submit bg-blue-900' onClick={handleLocateHelp}>Locate Help</button>
         </div>
       </form>
       {mapVisible && isLoaded && (

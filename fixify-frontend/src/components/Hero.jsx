@@ -17,7 +17,7 @@ const Hero = () => {
         <h1 className="text-6xl font-bold text-blue-900">Get Road Assistance Anytime, Anywhere!</h1>
         <p className='my-10 text-2xl text-blue-900'>Fixify: Your Roadside Assistance Solution - Instant Help When You Need It Most!</p>
         <Link to='/find-help'>
-          <button className="bg-blue-900 text-white px-6 py-4 rounded-md hover:bg-blue-700 text-xl font-semibold">Find Help Now</button>
+          <button className="bg-blue-900 text-white px-6 py-4 rounded-full hover:bg-blue-700 text-xl font-semibold">Find Help Now</button>
         </Link>
       </div>
     </div>

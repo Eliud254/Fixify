@@ -38,7 +38,7 @@ const Navbar = () => {
               </Link>
             ))}
             <Link to="/login">
-              <button className="px-5 rounded-md font-medium main-bg-color text-black  py-2 hover:bg-blue-500 hover:border-green-700 text-2xl" onClick={toggleLogin}>
+              <button className="px-5 rounded-full font-medium main-bg-color text-blue-900  py-2 hover:bg-blue-500 hover:border-green-700 text-2xl" onClick={toggleLogin}>
                 {showLogin ? 'SignUp' : 'Login'}
               </button>
             </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
                   </Link>
                 ))}
                 <Link to="/login">
-                  <button className="px-5 rounded-md font-medium main-bg-color text-black py-2 hover:bg-blue-500 text-2xl">
+                  <button className="px-5 rounded-full font-medium main-bg-color text-blue-900 py-2 hover:bg-blue-500 text-2xl">
                     {showLogin ? 'SignUp' : 'Login'}
                   </button>
                 </Link>
