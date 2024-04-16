@@ -9,60 +9,41 @@ const Contacts = () => {
         <h1 className="text-5xl text-blue-900 font-bold mb-4">Contact Us</h1>
         <div className="underline mb-20"></div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
-          <div className="flex items-center mb-2">
-            <FaMapMarkerAlt className="mr-2 text-lg" />
-            <div>
+      <div className="flex flex-col w-full items-center px-20 text-blue-900 font-bold">
+          <div className="flex items-center mb-10 w-9/12">
+            <FaMapMarkerAlt className="mr-2 text-4xl " />
+            <div className='ml-16'>
               <p className="text-lg">Address:</p>
-              <p>123 Main St,</p>
-              <p>Nairobi,</p>
-              <p>Kenya</p>
+              <p>123 Main St,Nairobi, Kenya</p>
             </div>
           </div>
-          <div className="flex items-center mt-4 mb-2">
-            <FaPhone className="mr-2 text-lg" />
-            <div>
+
+          <div className="flex items-center mt-4 mb-10 w-9/12">
+            <FaPhone className="mr-2 text-4xl" />
+            <div className='ml-16'>
               <p className="text-lg">Phone:</p>
               <p>123-456-7890</p>
             </div>
           </div>
-          <div className="flex items-center mt-4 mb-2">
-            <FaEnvelope className="mr-2 text-lg" />
-            <div>
+
+          <div className="flex items-center mt-4 mb-10 w-9/12">
+            <FaEnvelope className="mr-2 text-4xl " />
+            <div className='ml-16'>
               <p className="text-lg">Email:</p>
               <p>info@example.com</p>
             </div>
           </div>
-          <div className="flex mt-4 space-x-4">
-            <a href="#" className="text-blue-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
-              <FaFacebookSquare size={30} />
+          <div className="flex mt-4 space-x-4 w-9/12 mb-20">
+            <a href="#" className="text-blue-900 hover:text-blue-700" target="_blank" rel="noopener noreferrer " style={{ marginRight: '20px' }}>
+              <FaFacebookSquare size={40} />
             </a>
-            <a href="#" className="text-blue-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
-              <FaTwitterSquare size={30} />
+            <a href="#" className="text-blue-900 hover:text-blue-700" target="_blank" rel="noopener noreferrer mr-10" style={{ marginRight: '20px' }}>
+              <FaTwitterSquare size={40} />
             </a>
-            <a href="#" className="text-blue-500 hover:text-blue-700" target="_blank" rel="noopener noreferrer">
-              <FaInstagramSquare size={30} />
+            <a href="#" className="text-blue-900 hover:text-blue-700" target="_blank" rel="noopener noreferrer mr-10" style={{ marginRight: '20px' }}>
+              <FaInstagramSquare size={40} />
             </a>
           </div>
-        </div>
-        <div className="h-full">
-          {/* Google Maps integration */}
-          <div className="h-full">
-            <iframe
-              title="Google Maps"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              scrolling="no"
-              marginHeight="0"
-              marginWidth="0"
-              //src={`https://www.google.com/maps/embed/v1/place?q=123+Main+St,+Nairobi,+Kenya&key=YOUR_API_KEY`}
-              allowFullScreen
-              className="rounded-lg"
-            ></iframe>
-          </div>
-        </div>
       </div>
     </div>
   );
