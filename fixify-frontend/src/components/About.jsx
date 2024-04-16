@@ -4,7 +4,10 @@ import React from 'react';
 const About = () => {
   return (
     <div className="container mx-auto px-4 py-8 padding-adjustment">
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+      <div className='items-center flex flex-col '>
+        <h1 className="text-5xl text-blue-900 font-bold mb-4">About Us</h1>
+        <div className="underline mb-20"></div>
+      </div>
       <p className="text-lg mb-4">
         Welcome to Fixify, your one-stop destination for all your automotive needs. At Fixify, we understand the importance of keeping your vehicle in top condition, and that's why we're dedicated to connecting car owners with skilled mechanics who are experts in their field.
       </p>

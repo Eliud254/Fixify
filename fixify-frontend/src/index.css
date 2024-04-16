@@ -29,3 +29,11 @@ body{
 .padding-adjustment {
   margin-top: 100px;
 }
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #1E3A8A;
+  border-radius: 9px;
+  align-items: center;
+}

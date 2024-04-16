@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <div className="text-center p-24">
-      <h1 className="text-4xl font-bold my-8 text-blue-900">Services</h1>
+      <div className='items-center flex flex-col'>
+        <h1 className="text-5xl font-bold my-8 text-blue-900">Services</h1>
+        <div className="underline"></div>
+      </div>
       <div className="flex justify-center space-x-4 my-8 mt-20">
         <div className="flex flex-col items-center custom-button-bg p-16 flex-1 rounded-md cursor-pointer hover:opacity-80">
           <GiTowTruck size={64} color="#C0C0C0"/>
