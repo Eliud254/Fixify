@@ -14,7 +14,7 @@ import About from './components/About';
 
 function App() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

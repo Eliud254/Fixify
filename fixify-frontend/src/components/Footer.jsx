@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <div className="flex ">
+    
     <footer className="bg-blue-900 text-white mt-auto w-full">
       <div className="container mx-auto py-8 px-4">
         <div className="flex flex-wrap justify-center">
@@ -36,7 +36,7 @@ const Footer = () => {
         <p>&copy; {new Date().getFullYear()} Fixify. All rights reserved.</p>
       </div>
     </footer>
-    </div>
+    
   );
 };
 
