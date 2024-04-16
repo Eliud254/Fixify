@@ -1,14 +1,41 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-
+import React, { useState, useEffect } from 'react';
 import { CiLocationOn } from "react-icons/ci";
-import './FindHelp.css'
+import { GoogleMap, useJsApiLoader, Marker } from '@react-google-maps/api';
+import { useNavigate } from 'react-router-dom';
+import './FindHelp.css';
 
+const containerStyle = {
+  width: '100%',
+  height: '400px'
+};
+
+const center = {
+  lat: -3.745,
+  lng: -38.523
+};
 
 const FindHelp = () => {
   const [location, setLocation] = useState('');
   const [serviceType, setServiceType] = useState('');
+  const [mapVisible, setMapVisible] = useState(false); // State to track map visibility
+  const [map, setMap] = useState(null);
+  const { isLoaded } = useJsApiLoader({
+    id: 'google-map-script',
+    googleMapsApiKey: 'YOUR_API_KEY'
+  });
   const navigate = useNavigate();
+
+  useEffect(() => {
+    if (navigator.geolocation && map) {
+      navigator.geolocation.getCurrentPosition((position) => {
+        const userLocation = {
+          lat: position.coords.latitude,
+          lng: position.coords.longitude
+        };
+        map.panTo(userLocation);
+      });
+    }
+  }, [map]);
 
   const handleServiceTypeChange = (e) => {
     setServiceType(e.target.value);
@@ -18,21 +45,23 @@ const FindHelp = () => {
     setLocation(e.target.value);
   };
 
+  const handleLocateHelp = () => {
+    setMapVisible(true);
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Add logic here to handle the form submission
-    // For example, you can send a request to your backend
-    // to find help based on the user's location
-    history.push('/help-results'); // Redirect to the help results page
+    // Handle form submission
+    handleLocateHelp(); // Trigger map visibility after form submission
+    // navigate('/help-results'); // Redirect to the help results page
   };
 
   return (
     <div className='fh-container'>
       <div className='fh-header'>
-      <h1 className='fh-text'>Find Help</h1>
-      <div className="fh-underline"></div>
+        <h1 className='fh-text'>Find Help</h1>
+        <div className="fh-underline"></div>
       </div>
-      
       <form onSubmit={handleSubmit}>
         <label className='location-input'>
           <CiLocationOn className='icon'/>
@@ -50,9 +79,19 @@ const FindHelp = () => {
           </select>
         </label>
         <div className="fh-submit-container">
-          <button className='fh-submit'>Locate Help</button>
+          <button type="button" className='fh-submit' onClick={handleLocateHelp}>Locate Help</button>
         </div>
       </form>
+      {mapVisible && isLoaded && (
+        <GoogleMap
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={10}
+          onLoad={(map) => setMap(map)}
+        >
+          <Marker position={center} />
+        </GoogleMap>
+      )}
     </div>
   );
 };
