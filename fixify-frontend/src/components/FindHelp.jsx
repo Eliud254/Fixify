@@ -65,7 +65,7 @@ const FindHelp = () => {
       <form onSubmit={handleSubmit}>
         <label className='location-input'>
           <CiLocationOn className='icon'/>
-          <input type="text" required placeholder='Please Input Your Location' value={location} onChange={handleLocationChange} />
+          <input className='rounded-full' type="text" required placeholder='Please Input Your Location' value={location} onChange={handleLocationChange} />
         </label>
         <label className='service-input'>
           <p>Service Type:</p>
