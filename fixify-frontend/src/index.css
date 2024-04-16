@@ -4,6 +4,36 @@
 
 body{
   font-family: "Nunito", "sans-serif";
-  background-color: #2DA68B;
-  
+  background-color: #FFA500;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.main-bg-color {
+  background-color: #FFA500;
+}
+
+.custom-bg-color {
+  background-color: #22229f;
+}
+
+.custom-button-bg {
+  background-color: #3b82f6;
+}
+
+.custom-text-color {
+  color: #C0C0C0;
+}
+
+.padding-adjustment {
+  margin-top: 100px;
+}
+
+.underline {
+  width: 61px;
+  height: 6px;
+  background: #1E3A8A;
+  border-radius: 9px;
+  align-items: center;
 }
