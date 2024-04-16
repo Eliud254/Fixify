@@ -25,3 +25,7 @@ body{
 .custom-text-color {
   color: #C0C0C0;
 }
+
+.padding-adjustment {
+  margin-top: 100px;
+}

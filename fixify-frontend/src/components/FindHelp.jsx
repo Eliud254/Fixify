@@ -57,7 +57,7 @@ const FindHelp = () => {
   };
 
   return (
-    <div className='fh-container'>
+    <div className='fh-container padding-adjustment'>
       <div className='fh-header'>
         <h1 className='fh-text'>Find Help</h1>
         <div className="fh-underline"></div>

@@ -3,12 +3,12 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-8 padding-adjustment">
       <h1 className="text-3xl font-bold mb-4">About Us</h1>
       <p className="text-lg mb-4">
         Welcome to Fixify, your one-stop destination for all your automotive needs. At Fixify, we understand the importance of keeping your vehicle in top condition, and that's why we're dedicated to connecting car owners with skilled mechanics who are experts in their field.
       </p>
-      <p className="text-lg mb-4">
+      <p className="text-lg mb-4"> 
         Our platform provides car owners with access to a vast network of certified mechanics, offering a wide range of services, from routine maintenance and diagnostics to complex repairs and overhauls. Whether you're dealing with a minor issue or a major breakdown, Fixify is here to help you find the right mechanic for the job.
       </p>
       <p className="text-lg mb-4">

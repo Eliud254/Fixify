@@ -14,7 +14,7 @@ const LoginSignUp = () => {
   const [action, setAction] = useState("Sign Up")
 
   return (
-    <div className='signup-container'>
+    <div className='signup-container padding-adjustment'>
       <div className="header">
         <div className="text">{action}</div>
         <div className="underline"></div>
