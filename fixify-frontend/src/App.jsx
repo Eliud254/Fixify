@@ -1,5 +1,6 @@
 // App.jsx
 import React from 'react';
+import { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './App.css';
@@ -13,6 +14,14 @@ import Contacts from './components/Contact';
 import About from './components/About';
 
 function App() {
+
+  useEffect(() => {
+    fetch('http://localhost:3001/') // Update the URL with your backend URL
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(error => console.error(error));
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
