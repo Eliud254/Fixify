@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
   "homepage": "http://Eliud254.github.io/Fixify",
-=======
-  "homepage": "https://Eliud254.github.io/Fixify/fixify-frontend",
->>>>>>> 9212896e650b330d235759f313d940f916d66c14
   "name": "fixify-frontend",
   "private": true,
   "version": "0.0.0",
